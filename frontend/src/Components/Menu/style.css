@@ -1,0 +1,15 @@
+.menu_wrapper { height: 50px; background: #000; width: 100%; position: fixed; top: 0; display: flex; align-items: center; justify-content: center; transition: .3s; z-index: 9999; }
+.menu_wrapper .logo_wrapper { width: 300px; height: 50px; display: flex; align-items: center; justify-content: center; }
+.menu_wrapper .logo_wrapper img { width: 35%; }
+.menu_wrapper .nav_wrapper { height: 50px; width: calc(100% - 600px); }
+.menu_wrapper .user_wrapper { height: 50px; width: 300px; display: flex; align-items: center; justify-content: space-between; }
+.menu_wrapper .user_wrapper .user_container { display: flex; align-items: center; justify-content: center; }
+.menu_wrapper .user_wrapper .user_container .photo_user_logged { height: 30px; width: 30px; border-radius: 30px; margin-right: 10px; }
+.menu_wrapper .user_wrapper .user_container .photo_user_logged img { width: 100%; border-radius: 30px; }
+.menu_wrapper .user_wrapper .user_container .name_user_logged { font-size: 10px; }
+.menu_wrapper .user_wrapper .search_container .search_wrapper { height: 30px; width: 30px; position: relative; right: 30px; display: flex; align-items: center; justify-content: center; }
+.menu_wrapper .user_wrapper .search_container .search_wrapper img { width: 60%; }
+
+.back { background: #000; border: none; }
+
+/*# sourceMappingURL=style.css.map */

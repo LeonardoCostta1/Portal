@@ -1,0 +1,113 @@
+.recent_wrapper{
+    min-height:500px;
+    width: 90%;
+    margin: 0 auto;
+    .title_wrapper{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        height: 50px;
+        font: 1.8rem;
+        text-transform: uppercase;
+        width: 100%;
+        margin:0 auto;
+        span{
+            font-weight: 200;
+            margin-left: 5px;
+        }
+    }
+    .recent_box_news{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+     
+        .box_news{
+
+            height: 250px;
+            width: 290px;
+
+            margin-bottom: 50px;
+            .img{
+                height: 130px;
+                width: 100%; 
+                background:#222;
+                object-fit: contain;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .description{
+                height: 70px;
+                width: 100%; 
+                .title_news{
+                    height: 50px;
+                }
+                .resume_news{
+                    font-size:11px;
+                    color: #999;
+                    height: 50px;
+                }
+                .footer_news{
+                    height: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .left{
+
+                    width: 200px;
+                    font-size: 10px;
+                    font-weight: 200;
+                    }
+                    .right{
+                        width: 70px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        .like_wrapper{
+                            height: 30px;
+                            width: 30px;
+                            border: 1px solid #ffffff2c;
+                            border-radius: 30px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin-right: 5px;
+                            transition: .3s;
+                            cursor: pointer;
+                            &:hover{
+
+                                background: #ffffff2c;
+                            }
+                            img{
+                                width: 15px;
+                            }
+                        }
+
+                        .share_wrapper{
+                            height: 30px;
+                            width: 30px;
+                            border: 1px solid #ffffff2c;
+                            border-radius: 30px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            transition: .3s;
+                            cursor: pointer;
+                            &:hover{
+
+                                background: #ffffff2c;
+                            }
+                            img{
+                                width: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}

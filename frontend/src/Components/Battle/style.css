@@ -1,0 +1,17 @@
+.battle_wrapper { min-height: 500px; width: 100%; margin: 0 auto; border-bottom: 1px solid #9791912c; }
+.battle_wrapper .title_wrapper { display: flex; align-items: center; justify-content: flex-start; height: 100px; font: 1.8rem; text-transform: uppercase; width: 90%; margin: 0 auto; }
+.battle_wrapper .title_wrapper span { font-weight: 200; margin-left: 5px; }
+.battle_wrapper .battle_container { min-height: 400px; width: 90%; margin: 0 auto; }
+.battle_wrapper .battle_container .box_battle { width: 100%; }
+.battle_wrapper .battle_container .box_battle .adversary_wrapper { height: 80px; width: 80%; margin: 0 auto; background: #222; display: flex; align-items: center; justify-content: space-between; }
+.battle_wrapper .battle_container .box_battle .adversary_wrapper .band_container { display: flex; align-items: center; justify-content: space-around; height: 60px; width: calc(50% - 40px); border-radius: 5px; }
+.battle_wrapper .battle_container .box_battle .adversary_wrapper .band_container:last-child { flex-direction: row-reverse; }
+.battle_wrapper .battle_container .box_battle .adversary_wrapper .band_container .date_wrapper { width: 80px; height: 30px; display: flex; align-items: center; justify-content: center; flex-direction: column; font-size: 11px; }
+.battle_wrapper .battle_container .box_battle .adversary_wrapper .band_container .date_wrapper .date { height: 30px; width: 100%; text-transform: uppercase; font-weight: 200; }
+.battle_wrapper .battle_container .box_battle .adversary_wrapper .band_container .date_wrapper .date span { font-weight: bold; }
+.battle_wrapper .battle_container .box_battle .adversary_wrapper .band_container .date_wrapper .addres { height: 30px; width: 100%; }
+.battle_wrapper .battle_container .box_battle .adversary_wrapper .band_container .strem { height: 20px; width: 35px; background: #26f018; display: flex; align-items: center; justify-content: center; text-transform: uppercase; font-size: 10px; border-radius: 5px; }
+.battle_wrapper .battle_container .box_battle .adversary_wrapper .band_container .logo_band { height: 40px; width: 40px; background: #444; border-radius: 40px; }
+.battle_wrapper .battle_container .box_battle .adversary_wrapper .result_wrapper { height: 60px; width: 60px; background: #333; border-radius: 60px; display: flex; align-items: center; justify-content: center; font-size: 20px; color: #999; }
+
+/*# sourceMappingURL=style.css.map */

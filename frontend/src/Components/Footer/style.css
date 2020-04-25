@@ -1,0 +1,10 @@
+footer { height: 150px; width: 100%; display: flex; align-items: flex-end; justify-content: center; }
+footer .footer_container { height: 100px; width: 45%; display: flex; align-items: flex-start; justify-content: center; flex-direction: column; }
+footer .footer_container img { width: 130px; }
+footer .footer_container .right { font-style: 12px; font-weight: 200; color: #999; }
+footer .footer_container_right { width: 45%; height: 100px; text-transform: uppercase; display: flex; align-items: flex-end; justify-content: center; flex-direction: column; }
+footer .footer_container_right .right { font-style: 12px; font-weight: 200; color: #999; }
+footer .footer_container_right .right i { color: #fff; margin: 0px 10px; }
+footer .footer_container_right .right i:last-child { margin-right: 0px; }
+
+/*# sourceMappingURL=style.css.map */
