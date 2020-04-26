@@ -1,4 +1,5 @@
 import React,{useState,useEffect} from 'react';
+import {Link} from 'react-router-dom'
 import api from '../../Services/api'
 import './style.css';
 import like from '../../Assets/img/heart.svg'
@@ -24,9 +25,11 @@ export default function Recent() {
             {news.map((news)=>{
                 return(
                     <div className="box_news">
-                        <div className="img">
-                            <img src={news.photo}alt="news"/>
-                        </div>
+                        <Link to="/news">
+                            <div className="img">
+                                <img src={news.photo}alt="news"/>
+                            </div>
+                        </Link>
                         <div className="description">
                             <div className="title_news">{news.title}</div>
                             <div className="resume_news">{news.resume}</div>

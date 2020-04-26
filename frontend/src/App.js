@@ -1,21 +1,19 @@
 import React from 'react';
+import {BrowserRouter} from 'react-router-dom'
 import './App.css';
 import Menu from './Components/Menu';
-import Banner from './Components/Banner';
-// import Schedule from './Components/Schedule';
-import Recent from './Components/Recent';
 import Footer from './Components/Footer';
-// import Battle from './Components/Battle';
+import Routes from './Routes';
+
 
 function App() {
   return (
     <div className="App">
+      <BrowserRouter>
       <Menu/>
-      <Banner/>
-      <Recent/>
-      {/* <Battle/> */}
-       {/* <Schedule/> */}
+      <Routes/>
       <Footer/>
+      </BrowserRouter>
     </div>
   );
 }

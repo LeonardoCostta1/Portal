@@ -1,12 +1,12 @@
 .banner_wrapper{
-    height: 500px;
+    height: 550px;
     width: 100%;
     display: flex;
     align-items: flex-end;
-    justify-content: center;
+    // justify-content: center;
     background: linear-gradient(#000000,rgba(0, 0, 0, 0),#000000), url(../../Assets/img/band.jpg);
     background-size: cover;
-    border-bottom: 1px solid #ffffff2c;
+   
     margin-bottom: 30px;
 
 
@@ -25,12 +25,13 @@
             justify-content: center;
             position: relative;
             flex-direction: column;
+            
 
             .title_news_features{
-                font-size: 3rem;
-                line-height: 2.5rem;
-                letter-spacing: -2px;
-                max-width: 600px;
+                font-size: 3.5rem;
+                line-height: 3.5rem;
+                // letter-spacing: -2px;
+                max-width: 750px;
 
                 display: flex;
                 align-items: flex-start;
@@ -47,8 +48,8 @@
                 }
             }
             button{
-                height: 35px;
-                padding: 0px 50px;
+                height: 50px;
+                padding: 0px 70px;
                 background: #fff;
                 color: #000000;
                 border: none;
@@ -56,8 +57,9 @@
                 transition: .3s;
                 text-transform: uppercase;
                 margin-top: 10px;
+                font-weight: bold;
                 &:hover{
-                    background: rgb(139, 139, 139);
+                    background: rgb(219, 219, 219);
                 }
             }
 
@@ -139,7 +141,10 @@
     .side_feature_news{
         width: 300px;
         height:calc(100% - 50px);
-        border-left: 1px solid #ffffff2c;
+        // border-left: 1px solid #ffffff2c;
+        background: #0000009d;
+        // filter: blur(2px);
+        // border-bottom: 1px solid #ffffff2c;
 
         .side_news_box{
             height: 210px;
@@ -182,12 +187,17 @@
             width: 260px;
             margin:0 auto;
             .side_news_list_box{
-                height: 33%;
+                height: 30%;
                 border-bottom: 1px solid #ffffff2c;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 flex-direction: row;
+                cursor: pointer;
+                transition: .3s;
+                &:hover{
+                    background: rgba(0, 0, 0, 0.548);
+                }
              
                 &:nth-child(1){
                     margin-top: 10px;

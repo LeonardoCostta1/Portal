@@ -1,69 +1,35 @@
 $height:50px;
 .menu_wrapper{
     height: $height;
-background: #000;
+    background: #000;
     width: 100%;
     position: fixed;
     top: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     transition: .3s;
     z-index: 9999;
     .logo_wrapper{
-        width: 300px;
+        width: 90%;
         height: $height;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        img{
-            width: 35%;
-        }
-    }
-    .nav_wrapper{
-        height: $height;
-        width: calc(100% - 600px);;
-    }
-    .user_wrapper{
-        height: $height;
-        width: 300px;
         display: flex;
         align-items: center;
         justify-content:space-between;
-        .user_container{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            .photo_user_logged{
-                height:30px;
-                width: 30px;
-                border-radius: 30px;
-                margin-right: 10px;
-                
-                img{
-                    width: 100%;
-                    border-radius: 30px;
-                }
-            }
-            .name_user_logged{
-
-                font-size: 10px;
-            }
+        // border: 1px solid #ff0028;
+        margin:0 auto;
+        img{
+            width: 120px;
         }
-
-        .search_container{
-
-            .search_wrapper{
-                height:30px;
+        .drag{
+            height: 50px;
+            width: 50px;
+             display: flex;
+        align-items: center;
+        justify-content:center;
+        flex-direction: column;;
+            div{
+                height: 2px;
                 width: 30px;
-                position: relative;
-                right: 30px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                img{
-                    width: 60%;
-                }
+                background: #fff;
+                margin: 2px 0px;
             }
         }
     }

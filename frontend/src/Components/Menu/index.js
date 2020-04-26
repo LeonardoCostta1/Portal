@@ -1,7 +1,8 @@
 import React,{useEffect} from 'react';
 import  logo from '../../Assets/img/sunbar.svg'
-import  user from '../../Assets/img/user.png'
-import  search from '../../Assets/img/search.svg'
+// import  user from '../../Assets/img/user.png'
+// import  search from '../../Assets/img/search.svg'
+import {Link} from 'react-router-dom'
 
 import $ from 'jquery'
 
@@ -23,29 +24,18 @@ export default function Menu() {
     },[])
   return (
     <div className="menu_wrapper">
+                
         <div className="logo_wrapper">
-            <img src={logo} alt="portal sunbar"/>
-        </div>
-
-        <div className="nav_wrapper">
-            
-        </div>
-
-        <div className="user_wrapper">
-            <div className="user_container">
-                <div className="photo_user_logged">
-                    <img src={user} alt="user"/>
-                </div>
-                <div className="name_user_logged">Leonardo costa</div>
+            <Link to='/'>
+                <img src={logo} alt="portal sunbar"/>
+            </Link>
+            <div className="drag">
+                <div/>
+                <div/>
             </div>
-
-            <div className="search_container">
-                <div className="search_wrapper">
-                    <img src={search} alt="user"/>
-                </div>
-            </div>
-            
+   
         </div>
+       
 
     </div>
   );

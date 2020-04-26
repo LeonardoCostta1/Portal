@@ -1,9 +1,10 @@
 import React, {useState, useEffect} from 'react';
-
+import  {Link} from 'react-router-dom'
 import './style.css';
 import heart from '../../Assets/img/heart.svg'
 import share from '../../Assets/img/share.svg'
 import api from '../../Services/api'
+
 
 export default function Banner() {
 
@@ -29,7 +30,7 @@ export default function Banner() {
     console.log(feature)
 
   return (
-    <div className="banner_wrapper">
+    <div className="banner_wrapper" style={{ background: "linear-gradient(#,rgba(0, 0, 0, 0),#000000), url(../../Assets/img/band.jpg)"}}>
 
 {feature.map((feature)=>{
     return(
@@ -41,18 +42,18 @@ export default function Banner() {
                     {feature.resume}
                 </div>
                 </div>
-
-                <button>ler mais</button>
-
+                <Link to="/news">
+                    <button>ler mais</button>
+                </Link>
                 <div className="footer_feature_news">
                     <div className="box_author">
-                        <div className="photo">
+                        {/* <div className="photo">
                             <img src={feature.photo} alt="user"/>
                         </div>
                         <div className="author_description">
                             <div className="name">{feature.author}</div>
                             <div className="date">{feature.createdAt}</div>
-                        </div>
+                        </div> */}
                     </div>
 
                     <div className="like_news_wrapper">
@@ -86,6 +87,7 @@ export default function Banner() {
             <div className="side_news_list_wrapper">
                 {resp.map((subnews)=>{
                     return(
+                        <Link to="/news">
                         <div className="side_news_list_box">
                         <div className="photo">
                             <img src={subnews.photo} alt="news"/>
@@ -94,6 +96,7 @@ export default function Banner() {
                         <p>{subnews.resume}</p>
                         </div>
                     </div>
+                    </Link>
                     )
                 })}
             </div>
